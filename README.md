@@ -53,7 +53,16 @@ This approach is also detailed in a [Jupyter Notebook](https://github.com/trashp
 
 ## Modelling
 This will be the most interesting aspect: Is it possible to predict the upcoming wine ratings solely based on the current weather data? 
-This approach will be detailed in a [Jupyter Notebook](https://github.com/trashpanda-ai/Wine-Terroir/blob/main/5.%20Modelling.ipynb).
 
-## We will also compare between meteostat and open-meteo
+Unfortunately, there is no predictive signal in the current weather data. Maybe a better weather API will render different results. Or the feature engineering based on expert knowledge doesn't fit this problem statement. The results of XGBoost:
+| Metric | Value |
+| --- | --- |
+| R-square score | -0.152839 |
+| Adjusted R-square score on test set | -0.154807 |
+| Mean Squared Error (MSE) on test set | 17.229869 |
+| Absolute Error (MAE) on test set | 3.019083 |
+
+This approach is detailed in a [Jupyter Notebook](https://github.com/trashpanda-ai/Wine-Terroir/blob/main/5.%20Modelling.ipynb).
+
+## Comparison between meteostat and open-meteo
 Is there a better weather provider in terms of correlations? This means we do not care about accuracy of provided weather data, but only about the predictive quality our models can provide.
