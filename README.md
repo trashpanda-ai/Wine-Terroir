@@ -52,7 +52,8 @@ This approach is also detailed in a [Jupyter Notebook](https://github.com/trashp
 
 
 ## Modelling
-This will be the most interesting aspect: Is it possible to predict the upcoming wine ratings solely based on the current weather data? TBC...
+This will be the most interesting aspect: Is it possible to predict the upcoming wine ratings solely based on the current weather data? 
+This approach will be detailed in a [Jupyter Notebook](https://github.com/trashpanda-ai/Wine-Terroir/blob/main/5.%20Modelling.ipynb).
 
 ## We will also compare between meteostat and open-meteo
 Is there a better weather provider in terms of correlations? This means we do not care about accuracy of provided weather data, but only about the predictive quality our models can provide.
