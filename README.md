@@ -36,5 +36,22 @@ We obtain the (Region + Year)-Tuples from the wine data (which are unique, thus 
 
 These $10$ features are then appended to the dataframe and exported as CSV file. This approach is also detailed in a [Jupyter Notebook](https://github.com/trashpanda-ai/Wine-Terroir/blob/13844a79e441c1b0ee02f5d048f9470608d44dd8/3.%20Enrichment.ipynb).
 
+## Analysis
+We quickly analyze the merged data after some more pre-processing and calculate the correlations in a heatmap:
+![Heatmap](https://github.com/trashpanda-ai/Wine-Terroir/blob/main/plots/Heatmap%20Enrichment.png?raw=true)
+
+
+
+We also conduct an ANOVA analysis to find the most influential weather metrics for our ```Score```, ```Vintage``` and ```Drinking Window```:
+![ANOVA Score](https://github.com/trashpanda-ai/Wine-Terroir/blob/main/plots/ANOVA%20Score%20Enrichment.png?raw=true)
+
+![ANOVA Drinking Window](https://github.com/trashpanda-ai/Wine-Terroir/blob/main/plots/ANOVA%20Drink%20Window%20Enrichment.png?raw=true)
+
+
+This approach is also detailed in a [Jupyter Notebook](https://github.com/trashpanda-ai/Wine-Terroir/blob/f3966d60297df71535ad7c9b3694915caea79c1b/4.%20Analysis.ipynb).
+
 ## We will also compare between meteostat and open-meteo
 Is there a better weather provider in terms of correlations? This means we do not care about accuracy of provided weather data, but only about the predictive quality our models can provide.
+
+## Can we build a robust model to predict the upcoming wine ratings from the current weather data?
+This would be the most interesting aspect: Is it possible to predict a good year solely based on the weather data?
