@@ -50,8 +50,9 @@ We also conduct an ANOVA analysis to find the most influential weather metrics f
 
 This approach is also detailed in a [Jupyter Notebook](https://github.com/trashpanda-ai/Wine-Terroir/blob/f3966d60297df71535ad7c9b3694915caea79c1b/4.%20Analysis.ipynb).
 
+
+## Modelling
+This will be the most interesting aspect: Is it possible to predict the upcoming wine ratings solely based on the current weather data? TBC...
+
 ## We will also compare between meteostat and open-meteo
 Is there a better weather provider in terms of correlations? This means we do not care about accuracy of provided weather data, but only about the predictive quality our models can provide.
-
-## Can we build a robust model to predict the upcoming wine ratings from the current weather data?
-This would be the most interesting aspect: Is it possible to predict a good year solely based on the weather data?
